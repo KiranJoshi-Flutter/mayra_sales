@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1697696151",
+    "firebase_url": "https://mayra-aa73b.firebaseio.com",
+    "project_id": "mayra-aa73b",
+    "storage_bucket": "mayra-aa73b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1697696151:android:583ea30839126fec8e1cd2",
+        "android_client_info": {
+          "package_name": "com.mayaratechnology.mayrasales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1697696151-fnhucmffrvjfud4vkenf07qvahf6657v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mayaratechnology.mayrasales",
+            "certificate_hash": "78073f82de216ad55b01cb158c5ef29c8761b8be"
+          }
+        },
+        {
+          "client_id": "1697696151-arq0tmor6opnmm70cp1ocamsa3m1ef5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWCTmYbL2yA6zsU2Ki_gmyoxpm_bexKlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1697696151-arq0tmor6opnmm70cp1ocamsa3m1ef5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

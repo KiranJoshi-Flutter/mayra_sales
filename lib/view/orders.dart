@@ -65,6 +65,9 @@ class _OrdersState extends State<Orders> {
   Future<OrdersModel> _getOrderList() async {
     String token = await UserPreferences.getToken();
 
+    print('------- Token ---------');
+    print('$token');
+
     var headers = {'Authorization': 'Bearer $token'};
     var request = http.Request(
         'GET', Uri.parse('https://mayrasales.com/api/user/user_orders'));

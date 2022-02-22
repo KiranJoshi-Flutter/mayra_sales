@@ -4,6 +4,9 @@ import 'package:getwidget/getwidget.dart';
 import 'package:mayrasales/constants.dart';
 import 'package:mayrasales/controller/app_localisation.dart';
 import 'package:mayrasales/funstions.dart';
+import 'package:mayrasales/view/login.dart';
+import 'package:mayrasales/view/orders.dart';
+import 'package:mayrasales/view/seller/vendor_order_screen.dart';
 import 'dart:core';
 import 'package:recase/recase.dart';
 
@@ -238,13 +241,28 @@ class _VendorDashboardState extends State<VendorDashboard> {
                       ),
                     ),
                     onTap: () async {
-                      Navigator.pop(context);
+                      // Navigator.pop(context);
+
                       // Navigator.push(
                       //   context,
                       //   MaterialPageRoute(
                       //     builder: (context) => Orders(),
                       //   ),
                       // );
+
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => Login(),
+                      //   ),
+                      // );
+
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => VendorOrderScreen(),
+                        ),
+                      );
                     },
                   ),
                   Divider(

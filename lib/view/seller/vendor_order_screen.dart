@@ -138,54 +138,143 @@ class _VendorOrderScreenState extends State<VendorOrderScreen> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('Order Number'),
                                 Text(
-                                    '${snapshot.data.details[index].orderNumber}'),
-                                // Text('check'),
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Total Quantity'),
-                                Text('${snapshot.data.details[index].qty}'),
-                                // Text('check'),
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('Total Cost'),
+                                  'Order Number',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
                                 Text(
-                                    'Rs. ${snapshot.data.details[index].price}'),
+                                  '${snapshot.data.details[index].orderNumber}',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
                                 // Text('check'),
                               ],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('Message'),
-                                Text('Message'),
+                                Text(
+                                  'Total Quantity',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                                Text(
+                                  '${snapshot.data.details[index].qty}',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                                // Text('check'),
                               ],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('Payment Method'),
-                                Text('Payment Method'),
+                                Text(
+                                  'Total Cost',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                                Text(
+                                  'Rs. ${snapshot.data.details[index].price}',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                                // Text('check'),
                               ],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('Actions'),
+                                Text(
+                                  'Message',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                                Text(
+                                  'Message',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Payment Method',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                                Text(
+                                  'Payment Method',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Actions',
+                                  style: appTextStyle(
+                                    FontWeight.w500,
+                                    16.0,
+                                    kTextColor,
+                                  ),
+                                ),
                                 Row(
                                   children: [
-                                    Text('Details'),
+                                    Text(
+                                      'Details',
+                                      style: appTextStyle(
+                                        FontWeight.w500,
+                                        16.0,
+                                        kTextColor,
+                                      ),
+                                    ),
                                     SizedBox(
                                       width: 10.0,
                                     ),
-                                    Text('Processing'),
+                                    Text(
+                                      'Processing',
+                                      style: appTextStyle(
+                                        FontWeight.w500,
+                                        16.0,
+                                        kTextColor,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ],

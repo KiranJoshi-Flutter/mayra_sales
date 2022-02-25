@@ -279,6 +279,11 @@ class _VendorOrderScreenState extends State<VendorOrderScreen> {
                                 ),
                               ],
                             ),
+                            Container(
+                              height: 50.0,
+                              width: 100.0,
+                              color: Colors.red,
+                            ),
                             Divider(
                               height: 20.0,
                               thickness: 1.5,

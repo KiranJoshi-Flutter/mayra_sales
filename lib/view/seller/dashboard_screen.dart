@@ -8,6 +8,7 @@ import 'package:mayrasales/model/product_details.dart';
 import 'package:mayrasales/view/login.dart';
 import 'package:mayrasales/view/orders.dart';
 import 'package:mayrasales/view/productdetails2.dart';
+import 'package:mayrasales/view/products.dart';
 import 'package:mayrasales/view/seller/vendor_order_screen.dart';
 import 'dart:core';
 import 'package:recase/recase.dart';
@@ -266,10 +267,17 @@ class _VendorDashboardState extends State<VendorDashboard> {
                       //   ),
                       // );
 
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => ProductDetailScreen(),
+                      //   ),
+                      // );
+
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ProductDetailScreen(),
+                          builder: (context) => Products(),
                         ),
                       );
                     },

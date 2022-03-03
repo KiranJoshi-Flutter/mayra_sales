@@ -77,9 +77,11 @@ dependencies:
   # dropdown_button2: any
   dropdown_below: 1.0.3
   autocomplete_textfield: ^1.7.3
-  social_share: any
+#  social_share: any
   # flutter_icons: any
   # chewie_player: any
+  share_plus: ^2.0.0
+  path_provider: any
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

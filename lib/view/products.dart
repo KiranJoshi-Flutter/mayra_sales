@@ -7,6 +7,7 @@ import 'package:mayrasales/model/userpreferences.dart';
 import 'package:mayrasales/view/cart.dart';
 import 'package:mayrasales/view/login.dart';
 import 'package:mayrasales/view/productdetail.dart';
+import 'package:mayrasales/view/productdetails2.dart';
 import 'package:requests/requests.dart';
 
 class Products extends StatefulWidget {
@@ -103,6 +104,15 @@ class _ProductsState extends State<Products> {
                 //         ProductDetailPage(productId: products[index].id),
                 //   ),
                 // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProductDetailScreen(
+                      productId: products[index].id,
+                      productTitle: products[index].name,
+                    ),
+                  ),
+                );
               },
               child: Container(
                 width: MediaQuery.of(context).size.width / 2,

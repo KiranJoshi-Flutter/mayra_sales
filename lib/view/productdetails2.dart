@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:getwidget/getwidget.dart';
@@ -16,7 +17,10 @@ import 'package:mayrasales/view/login.dart';
 import 'package:mayrasales/widgets/widgets.dart';
 import 'package:intl/intl.dart';
 import 'package:mayrasales/wishlist.dart';
-import 'package:social_share/social_share.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:share_plus/share_plus.dart';
+// import 'package:share/share.dart';
+// import 'package:social_share/social_share.dart';
 
 class ProductDetailScreen extends StatefulWidget {
   final int productId;
@@ -591,13 +595,32 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                                       padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                       icon: Icon(Icons.share),
                                       iconSize: 24.0,
-                                      onPressed: () {
-                                        SocialShare.shareFacebookStory(
-                                            imgList[0],
-                                            "#ffffff",
-                                            "#000000",
-                                            "https://deep-link-url",
-                                            appId: "305953653803550");
+                                      onPressed: () async {
+                                        const urlImage =
+                                            'https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__340.jpg';
+
+                                        final url = Uri.parse(urlImage);
+
+                                        final response = await http.get(url);
+                                        final bytes = response.bodyBytes;
+
+                                        final temp =
+                                            await getTemporaryDirectory();
+                                        final path = '${temp.path}/image.jpg';
+                                        File(path).writeAsBytesSync(bytes);
+
+                                        await Share.shareFiles(
+                                          [path],
+                                          text: '${widget.productTitle}',
+                                          subject: '${widget.productTitle}',
+                                        );
+
+                                        // SocialShare.shareFacebookStory(
+                                        //     imgList[0],
+                                        //     "#ffffff",
+                                        //     "#000000",
+                                        //     "https://deep-link-url",
+                                        //     appId: "305953653803550");
                                         /*...*/
                                         // Toast.show("Forgot Password ..........", context,
                                         //     duration: Toast.LENGTH_SHORT,
